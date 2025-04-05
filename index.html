@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/3f330e35da.js" crossorigin="anonymous"></script>
+    <title>Web Design | Gopuram Travel</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><a href="#"><h4>Gopuram Travel</h4></a></div>
+      <ul class="nav__links">
+        <li class="link">Home</li>
+        <li class="link" id="loginModalBtn">login</li>
+        <li class="link">Offers</li>
+        <li class="link">Services</li>
+        <li class="link">Contacts</li>
+      </ul>
+      <div class="search__box">
+        <input type="text" placeholder="Search" />
+        <i class="ri-search-line"></i>
+      </div>
+    </nav>
+    <!-- home -->
+    <header>
+      <div class="section__container">
+        <div class="header__content">
+          <h1>Gopuram Travel</h1>
+          <p>
+            Welcome to Gopuram Travel Your Gateway to Unforgettable Journeys!
+            Discover the World with Ease Whether you're planning a quick getaway, a business trip,
+             or a dream vacation, Gopuram Travel makes travel booking simple, fast, and affordable.
+          </p>
+          <button>Read more</button>
+        </div>
+     </div>
+    </header>
+   <!-- login -->
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Login</h2><br>
+    <form class="login-form" action="/login" method="POST">
+      <div class="form-group">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+      <div class="form-footer">
+        <a href="#">Create account</a>
+        <a href="#">Forgot password?</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+    <section class="journey__container">
+      <div class="section__container">
+        <h2 class="section__title">Start Your Journey</h2>
+        <p class="section__subtitle">The most searched states in March</p>
+        <div class="journey__grid">
+          <div class="state__card">
+            <img src="state1.jpg" alt="state" />
+            <div class="state__name">
+              <span>Agra, Uttar Pradesh</span>
+            </div>
+          </div>
+          <div class="state__card">
+            <img src="state2.jpg" alt="state" />
+            <div class="state__name">
+              <span>Mysore, Karnataka</span>
+            </div>
+          </div>
+          <div class="state__card">
+            <img src="state3.webp" alt="state" />
+            <div class="state__name">
+              <span>lakshadweep-islands</span>
+            </div>
+          </div>
+          <div class="state__card">
+            <img src="state4.jpg" alt="state" />
+            <div class="state__name">
+              <span>jaipur,Rajasthan</span>
+            </div>
+          </div>
+          <div class="state__card">
+            <img src="state5.jpg" alt="state" />
+            <div class="state__name">
+              <span>Kollam,Kerala</span>
+            </div>
+          </div>
+          <div class="state__card">
+            <img src="state6.jpeg" alt="state" />
+            <div class="state__name">
+              <span>Hampi,karnataka</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner__container">
+      <div class="section__container">
+        <div class="banner__content">
+          <h2>Why to travel India</h2>
+          <p>
+            India is a land of incredible diversity, offering rich cultural heritage, stunning landscapes, and vibrant traditions.
+            From the majestic Taj Mahal to the serene backwaters of Kerala, every region has something unique to explore. 
+            Experience spiritual enlightenment in Varanasi, indulge in flavorful street food, or embark on thrilling Himalayan treks. 
+            The warmth of Indian hospitality, colorful festivals, and ancient history make it a captivating destination. 
+            Affordable travel and luxury experiences coexist, ensuring unforgettable memories. 
+            India is not just a place to visit—it’s an experience that stays with you forever.
+          </p>
+          <button>See Tours</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="display__container">
+      <div class="section__container">
+        <h2 class="section__title">Why Choose Us</h2>
+        <p class="section__subtitle">
+          The gladdest moment in human life, is a departure into unknown lands.
+        </p>
+        <div class="display__grid">
+          <div class="display__card grid-1">
+            <img src="grid1.png" alt="grid" />
+          </div>
+          <div class="display__card">
+            <h4>Passionate Travel</h4>
+            <p>Fuel your passion for adventure and discover new horizons</p>
+          </div>
+          <div class="display__card">
+            <img src="grid2.jpg" alt="grid" />
+          </div>
+          <div class="display__card">
+            <img src="grid3.png" alt="grid" />
+          </div>
+          <div class="display__card">
+            <h4>Beautiful Places</h4>
+            <p>Uncover the India's most breathtakingly beautiful places</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container">
+        <h4>Gopuram Travel</h4>
+        <div class="social__icons">
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-x-twitter"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span><i class="fa-brands fa-linkedin"></i></span>
+        </div>
+        <p>
+          Travel makes one modest. You see what a tiny place you occupy in the
+          world.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Modal functionality
+      const modal = document.getElementById('loginModal');
+      const btn = document.getElementById('loginModalBtn');
+      const span = document.getElementsByClassName('close')[0];
+      
+      btn.onclick = function() {
+        modal.style.display = 'block';
+      }
+      
+      span.onclick = function() {
+        modal.style.display = 'none';
+      }
+      
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>
